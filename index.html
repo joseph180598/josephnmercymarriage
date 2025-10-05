@@ -14,14 +14,14 @@
       text-align: center;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #fff;
-      background: url('https://images.unsplash.com/photo-1529634806980-79d1c1a8b36f?auto=format&fit=crop&w=1600&q=80') 
+      background: url('https://images.unsplash.com/photo-1503508343067-927f5f96d104?auto=format&fit=crop&w=1600&q=80') 
                   no-repeat center center/cover;
     }
     .overlay {
       background: rgba(0,0,0,0.6);
       padding: 40px;
       border-radius: 15px;
-      max-width: 600px;
+      max-width: 700px;
     }
     h1 {
       font-size: 2.5em;
@@ -31,8 +31,12 @@
       font-size: 2em;
       margin-bottom: 20px;
     }
-    .venue a {
-      color: #ff69b4;
+    .venue, .reception {
+      margin-top: 15px;
+      font-size: 1.1em;
+    }
+    .venue a, .reception a {
+      color: #ffcc70;
       text-decoration: none;
       font-weight: bold;
     }
@@ -43,12 +47,22 @@
     <h1>💒 Marriage Countdown</h1>
     <div id="countdown"></div>
     <div class="venue">
-      Venue: <a href="#" target="_blank">[Replace with your Venue]</a>
+      Ceremony: <br>
+      <strong>St. Stephen's Tamil Church CNI</strong><br>
+      ⏰ 19 Jan 2026, 3:30 PM<br>
+      📍 <a href="https://share.google/unKw1wribsp0ANIAS" target="_blank">View on Google Maps</a>
+    </div>
+    <div class="reception">
+      Reception: <br>
+      <strong>Bright High School and Jr College</strong><br>
+      ⏰ 19 Jan 2026, from 7:00 PM onwards<br>
+      📍 <a href="https://share.google/054C1z75uDUgNZPwp" target="_blank">View on Google Maps</a>
     </div>
   </div>
 
   <script>
-    const eventDate = new Date("2026-01-19T11:00:00+05:30"); // Marriage date & time
+    // Countdown to Church Ceremony (main event)
+    const eventDate = new Date("2026-01-19T15:30:00+05:30"); 
 
     function updateCountdown() {
       const now = new Date();
